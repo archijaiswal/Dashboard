@@ -10,7 +10,10 @@ function App() {
       mode: 'dark',
       background: {
         // default: '#1F2129'
-        default: '#20272C'
+        // default: '#20272C',      
+        default:'#1F2129',
+        paper: '#2A3035',
+     
       },
       primary: {
         main: '#3FA268',

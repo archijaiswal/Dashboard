@@ -29,21 +29,26 @@ export default function Sidebar() {
         "& .MuiDrawer-paper": {
           width: drawerWidth,
           boxSizing: "border-box",
+          backgroundColor: "#23262D",
+      
         },
+        "&. MuiList-root":{
+              ":hover": {
+            bgcolor: "pink",},
+        },        
         pl:2,
-        backgroundColor:'#236032'
       }}
       variant="permanent"
       anchor="left"
     >
       <List sx={{pl:2,pr:2}}>
-        <ListItemButton>
+        <ListItemButton sx={{'&:hover': { background: 'black' }}}>
           <ListItemIcon sx={{mt:2, mb:2}}>
             <img src={logo} alt="" height={35} />
           </ListItemIcon>
         </ListItemButton>
         {["Dashboard", "Project", "Staffing", "Messages"].map((text, index) => (
-          <ListItem key={index} disablePadding>
+          <ListItem key={index} disablePadding sx={{'&:hover': { background: 'black' }}}>
             <ListItemButton>
               <ListItemIcon>
                 {index%2 === 0 ? <BarChartOutlinedIcon /> : <MailIcon />}
@@ -57,7 +62,7 @@ export default function Sidebar() {
       <Box sx={{ flexGrow: 1 }} />
       <List sx={{pl:2,pr:2}}>
         {["Support", "Settings"].map((text, index) => (
-          <ListItem key={index} disablePadding>
+          <ListItem key={index} disablePadding sx={{'&:hover': { background: 'black' }}}>
             <ListItemButton>
               <ListItemIcon>
                 {index % 2 === 0 ? <SettingsOutlinedIcon /> : <MailIcon />}

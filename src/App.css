@@ -30,6 +30,17 @@
   color: #61dafb;
 }
 
+.common {
+  display: flex;
+  padding: 8px;
+  border: 1px solid;
+  border-color: #5f666b;
+  border-radius: 8px;
+  height: 100%;
+}
+.padl{
+  padding-left: 0px !important;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

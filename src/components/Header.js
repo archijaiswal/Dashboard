@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@mui/material/Button';
-import { styled, alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
 import Badge from '@mui/material/Badge';
@@ -19,9 +19,10 @@ const Header = () => {
     const Search = styled('div')(({ theme }) => ({
         position: 'relative',
         borderRadius: '50px',
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
+        backgroundColor: 'black',
         '&:hover': {
-          backgroundColor: alpha(theme.palette.common.white, 0.25),
+          // backgroundColor: alpha(theme.palette.common.white, 0.25),
+          backgroundColor: '#2A3235'
         },
         marginRight: theme.spacing(2),
         marginLeft: 0,
@@ -29,7 +30,7 @@ const Header = () => {
         [theme.breakpoints.up('sm')]: {
           marginLeft: theme.spacing(3),
           width: 'auto',
-        },
+        }
       }));
 
       
@@ -59,14 +60,14 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
 
   return (
     <Box sx={{ flexGrow: 1}}>
-        <AppBar position="static" elevation={0} sx={{pt:2, backgroundColor:'#1F2129'}}>
+        <AppBar position="static" elevation={0} sx={{pt:2, backgroundColor:'#20272C'}}>
         <Toolbar>
          <Search>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
             <StyledInputBase
-              placeholder="Search…"
+              placeholder="Search"
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>

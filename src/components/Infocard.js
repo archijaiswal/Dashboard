@@ -1,23 +1,25 @@
 import React from "react";
-import {
-  Grid,
-  Card,
-  CardContent,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Grid, Card, CardContent, Typography, Box } from "@mui/material";
+// import { styled } from "@mui/material/styles";
+
 import icon1 from "../images/icon1.png";
 import edit from "../images/edit.png";
 import bookmark from "../images/bookmark.png";
-import watch from "../images/watch.png"
+import watch from "../images/watch.png";
+import "../App.css";
 const Infocard = () => {
+  // const StyledCard = styled(Card)(() => ({
+  //   display: "flex",
+  //   p: "8px",
+  //   border: 1,
+  //   borderColor: "#5f666b",
+  //   borderRadius: "8px",
+  // }));
   return (
-    <Grid container spacing={2} sx={{pt:'16px'}}>
+    <Grid container spacing={2} sx={{ pt: "24px" }}>
       {/* First Row */}
-      <Grid item xs={3} md={3}>
-        <Card
-          sx={{ display: "flex", p: "8px", border: 1, borderColor: "#3C4246" ,borderRadius: '8px' }}
-        >
+      <Grid item xs={8} md={3}>
+        <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
               07
@@ -30,15 +32,13 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={3} md={3}>
-      <Card
-          sx={{ display: "flex", p: "8px", border: 1, borderColor: "#3C4246",borderRadius: '8px'  }}
-        >
+      <Grid item xs={8} md={3}>
+        <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
-              03
+              08
             </Typography>
-            <Typography>Active Jobs</Typography>
+            <Typography>Proposals</Typography>
           </CardContent>
 
           <Box p={2} component="span" sx={{ m: "auto" }}>
@@ -46,15 +46,13 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={3} md={3}>
-      <Card
-          sx={{ display: "flex", p: "8px", border: 1, borderColor: "#3C4246" ,borderRadius: '8px' }}
-        >
+      <Grid item xs={8} md={3}>
+        <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
               07
             </Typography>
-            <Typography>Active User</Typography>
+            <Typography>Active Jobs</Typography>
           </CardContent>
 
           <Box p={2} component="span" sx={{ m: "auto" }}>
@@ -62,17 +60,14 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={3} md={3}>
-      <Card
-          sx={{ display: "flex", p: "8px", border: 1, borderColor: "#3C4246", borderRadius: '8px' }}
-        >
+      <Grid item xs={8} md={3}>
+        <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
-              04
+              40
             </Typography>
-            <Typography>Proposals</Typography>
+            <Typography>Applications</Typography>
           </CardContent>
-
           <Box p={2} component="span" sx={{ m: "auto" }}>
             <img src={watch} alt="" />
           </Box>

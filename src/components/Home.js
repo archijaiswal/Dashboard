@@ -20,7 +20,7 @@ const Home = () => {
        
           <Box sx={{width:'100%'}}>
           <Header />
-            <Box spacing={2} sx={{width:'100%', p:'24px', mt:'69px'}}>
+            <Box spacing={2} sx={{width:'100%', p:'24px', mt:'48px'}}>
             <Box sx={{mb: 2}}>
               <Typography variant="h4" fontWeight={500}>
                 Welcome back, {user.name}
