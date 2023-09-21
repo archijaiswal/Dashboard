@@ -43,16 +43,5 @@ function App() {
   );
 }
 
-// function App() {
-//   return (
-//     <ThemeProvider theme={theme}>
-    
-//     <div className="App">
-//       hii
-//       <Sidebar/>
-//     </div>
-//     </ThemeProvider>
-//   );
-// }
 
 export default App;

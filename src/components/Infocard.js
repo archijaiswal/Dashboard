@@ -16,9 +16,9 @@ const Infocard = () => {
   //   borderRadius: "8px",
   // }));
   return (
-    <Grid container spacing={2} sx={{ pt: "24px" }}>
+    <Grid container spacing={{ xs: 1, md: 2 }} sx={{ pt: "24px" }}>
       {/* First Row */}
-      <Grid item xs={8} md={3}>
+      <Grid item xs={12} md={3}>
         <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
@@ -32,7 +32,7 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={8} md={3}>
+      <Grid item xs={12} md={3}>
         <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
@@ -46,7 +46,7 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={8} md={3}>
+      <Grid item xs={12} md={3}>
         <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
@@ -60,7 +60,7 @@ const Infocard = () => {
           </Box>
         </Card>
       </Grid>
-      <Grid item xs={8} md={3}>
+      <Grid item xs={12} md={3}>
         <Card className="common">
           <CardContent sx={{ width: "75%" }}>
             <Typography variant="h3" component="div">
